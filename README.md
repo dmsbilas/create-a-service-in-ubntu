@@ -18,3 +18,21 @@ If you have done so, your service is ready to run. For running the service you h
 ```
 sudo systemctl start my_example_service
 ```
+## Controlling the service
+```
+# Control whether service loads on boot
+sudo systemctl enable my_service
+sudo systemctl disable my_service
+
+# Manual start and stop
+sudo systemctl start my_service
+sudo systemctl stop my_service
+
+# Restarting/reloading
+sudo systemctl daemon-reload # Run if .service file has changed
+sudo systemctl restart my_restart
+
+# Or if working with a user service add --user flag
+systemctl --user restart my_user_service
+```
+
