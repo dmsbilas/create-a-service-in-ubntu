@@ -5,4 +5,5 @@ If we are making Systemd based system then we have to create a file by following
 my_example_service.service
 ```
 
-###Remember :### the file has to be with .service tailing.
+[Remember] 
+the file has to be with .service tailing.
